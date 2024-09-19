@@ -6,7 +6,7 @@
 
 ## 钱包
 
-1. [钱包的分类](https://github.com/0xweb-3/web3_share/tree/main/doc/01.%E9%92%B1%E5%8C%85%E5%88%86%E7%B1%BB)
+1. ✅[钱包的分类](https://github.com/0xweb-3/web3_share/tree/main/doc/01.%E9%92%B1%E5%8C%85%E5%88%86%E7%B1%BB)
 2. [中心化钱包](https://github.com/0xweb-3/web3_share/tree/main/doc/02.%E4%B8%AD%E5%BF%83%E5%8C%96%E9%92%B1%E5%8C%85)
 3. [HD钱包知识](https://github.com/0xweb-3/web3_share/tree/main/doc/03.HD%E9%92%B1%E5%8C%85)
 4. ETH确认位
