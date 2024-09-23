@@ -296,6 +296,12 @@ Optimistic Rollups（OP）和 zk-Rollups（ZK）是两种不同的 Layer 2 扩�
 
 ## ovm代码架构
 
+
+
+
+
+
+
 ### CTC合约与 SCC合约
 
 在 Layer 2 扩展方案（特别是 Optimistic Rollup 方案）中，**CTC（Canonical Transaction Chain）合约**和 **SCC（State Commitment Chain）合约** 是关键的智能合约组件，它们部署在以太坊 Layer 1 上，负责管理和验证 Layer 2 的状态和交易。
@@ -329,7 +335,7 @@ Optimistic Rollups（OP）和 zk-Rollups（ZK）是两种不同的 Layer 2 扩�
 
 它们的作用是确保 Layer 2 的交易和状态在 Layer 1 上能够得到有效验证和管理，从而提供安全性和数据完整性。
 
-## 信使合约与桥合约
+### 信使合约与桥合约
 
 **信使合约（Message Contract）** 和 **桥合约（Bridge Contract）** 是跨链通信和资产转移的重要组成部分，它们在不同的区块链或 Layer 之间实现数据和资产的互操作性。它们的功能和作用有所不同，但通常互相配合使用。
 
@@ -370,3 +376,44 @@ Optimistic Rollups（OP）和 zk-Rollups（ZK）是两种不同的 Layer 2 扩�
 - **桥合约（Bridge Contract）**: 负责跨链资产的安全转移和管理。
 
 两者在跨链生态中都起着至关重要的作用，通过配合使用，实现了不同链之间的互操作性和资产的无缝流动。
+
+### batch-submiter
+
+在以太坊 Layer 2（L2）扩展解决方案中，`batch-submitter` 是一个关键组件，主要用于将 L2 网络上的交易数据批量提交到 L1（Layer 1）上。以下是 `batch-submitter` 的一些关键功能和工作原理：
+
+1. **批量提交交易数据（Batch Submission）**
+
+   - `batch-submitter` 将 L2 网络中的多个交易数据打包成一个批次，并将其作为一个单独的交易提交到 L1 上。这样做的目的是减少 L1 上的交易数量，从而降低交易费用。
+   - 这些批次通常包括交易的状态变更、状态根（state root）等信息。
+
+2. **数据可用性（Data Availability）**
+
+   - `batch-submitter` 在 L1 上发布的数据包含了 L2 网络上交易的压缩信息，以确保这些交易的数据在 L1 上是可用的。
+   - 数据可用性对于 L2 的安全性和去中心化至关重要，因为它允许节点和观察者验证 L2 网络的状态。
+
+3. **抗审查性（Censorship Resistance）**
+
+   - 由于 L2 交易的最终状态是由 L1 确认的，因此 `batch-submitter` 的存在保障了 L2 网络的抗审查性，即使某些 L2 操作员试图阻止某些交易，它们最终仍会被提交到 L1 上。
+
+4. **批次验证（Batch Verification）**
+
+   - `batch-submitter` 提交的批次包含了 L2 网络上的状态变更证明（Proof），L1 网络可以通过这些证明验证 L2 网络上的状态是否正确。
+   - 例如，Optimistic Rollup 中的批次提交后，有一个挑战期（Challenge Period），在此期间任何人都可以对批次进行验证和挑战。
+
+5. **降低交易成本（Cost Efficiency）**
+
+   - 通过批量提交，`batch-submitter` 可以有效降低在 L1 上执行交易的成本，因为多个 L2 交易被打包成一个 L1 交易提交。
+   - 通常情况下，L2 网络会选择 gas 价格较低的时间段提交批次，以进一步降低费用。
+
+6. **批次大小和频率（Batch Size and Frequency）**
+
+   - `batch-submitter` 通常会根据预定的策略选择批次的大小和提交的频率。这取决于当前 L2 网络的交易量、L1 的拥堵情况以及提交费用等因素。
+
+7. **应用案例（Use Cases）**
+
+   - `batch-submitter` 是像 Optimistic Rollups 和 ZK-Rollups 这些 L2 扩展方案中的核心组件。
+   - 在 Optimism、Arbitrum 等 Rollup 解决方案中，`batch-submitter` 的存在是为了确保 L2 交易的有效性和状态的更新能最终被记录在 L1 上。
+
+总结
+
+`batch-submitter` 是 L2 网络与 L1 网络之间的桥梁，负责将 L2 网络的交易数据有效地提交到 L1 上，以确保数据可用性、抗审查性和批次验证。它的存在极大地提高了以太坊 L2 扩展解决方案的可行性和安全性。
