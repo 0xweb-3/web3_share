@@ -12,16 +12,16 @@
 4. ✅[MPC托管钱包原理](https://github.com/0xweb-3/web3_share/tree/main/wallet-doc/04.MPC%E6%89%98%E7%AE%A1%E9%92%B1%E5%8C%85%E5%8E%9F%E7%90%86)
 5. ✅[ETH确认位](https://github.com/0xweb-3/web3_share/tree/main/wallet-doc/05.ETH%E7%A1%AE%E8%AE%A4%E4%BD%8D)
 6. ✅[ETH交易类型](https://github.com/0xweb-3/web3_share/tree/main/wallet-doc/06.ETH%E4%BA%A4%E6%98%93%E7%B1%BB%E5%9E%8B)
-7. 合约事件监听
-8. ETH的HD钱包实现
-9. BTC的UTXO模型
-10. BTC的HD钱包实现
-11. ETH中心化钱包实现
-12. solana中心化钱包实现
-13. solana的HD钱包实现
-14. Ton的HD钱包
-15. comos的HD钱包实现
-16. BTC多签钱包实现
+7. ETH的HD钱包实现
+8. BTC的UTXO模型
+9. BTC的HD钱包实现
+10. ETH中心化钱包实现
+11. solana中心化钱包实现
+12. solana的HD钱包实现
+13. Ton的HD钱包
+14. comos的HD钱包实现
+15. BTC多签钱包实现
+16. MPC实战
 
 ## solidity合约
 
@@ -29,6 +29,7 @@
 * 各种call
 * 合约的升级
 * 多签钱包实现
+* 合约事件监听
 
 ## 公链
 
