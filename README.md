@@ -11,15 +11,17 @@
 3. ✅[去中心化钱包（HD）钱包知识](https://github.com/0xweb-3/web3_share/blob/main/wallet-doc/03.HD%E9%92%B1%E5%8C%85/README.md)
 4. ✅[MPC托管钱包原理](https://github.com/0xweb-3/web3_share/tree/main/wallet-doc/04.MPC%E6%89%98%E7%AE%A1%E9%92%B1%E5%8C%85%E5%8E%9F%E7%90%86)
 5. ETH确认位
-6. ETH的HD钱包实现
-7. BTC的UTXO模型
-8. BTC的HD钱包实现
-9. ETH中心化钱包实现
-10. solana中心化钱包实现
-11. solana的HD钱包实现
-12. Ton的HD钱包
-13. comos的HD钱包实现
-14. BTC多签钱包实现
+6. ETH交易类型
+7. 合约事件监听
+8. ETH的HD钱包实现
+9. BTC的UTXO模型
+10. BTC的HD钱包实现
+11. ETH中心化钱包实现
+12. solana中心化钱包实现
+13. solana的HD钱包实现
+14. Ton的HD钱包
+15. comos的HD钱包实现
+16. BTC多签钱包实现
 
 ## solidity合约
 
