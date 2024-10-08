@@ -12,7 +12,7 @@
 4. ✅[MPC托管钱包原理](https://github.com/0xweb-3/web3_share/tree/main/wallet-doc/04.MPC%E6%89%98%E7%AE%A1%E9%92%B1%E5%8C%85%E5%8E%9F%E7%90%86)
 5. ✅[ETH确认位](https://github.com/0xweb-3/web3_share/tree/main/wallet-doc/05.ETH%E7%A1%AE%E8%AE%A4%E4%BD%8D)
 6. ✅[ETH交易类型](https://github.com/0xweb-3/web3_share/tree/main/wallet-doc/06.ETH%E4%BA%A4%E6%98%93%E7%B1%BB%E5%9E%8B)
-7. ETH的HD钱包实现
+7. [ETH的HD钱包实现](https://github.com/0xweb-3/web3_share/tree/main/wallet-doc/07.ETH%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%92%B1%E5%8C%85%E5%AE%9E%E7%8E%B0)
 8. ETH GAS费用计算
 9. 什么是EVM同源链
 10. BTC的UTXO模型
