@@ -29,13 +29,14 @@
 ## solidity合约
 * [重点语法说明](https://github.com/0xweb-3/web3_share/tree/main/solidity-doc/01%E9%87%8D%E7%82%B9%E8%AF%AD%E6%B3%95%E8%AF%B4%E6%98%8E)
 * 各种call
-* 合约的升级
 * 合约的调用
+* 合约的升级
+* CREATE2
 * Foundry使用
 * 实现erc-20代币
-* CREATE2
 * 简单实现一个NFT的发行
 * 主币/Erc-20转账的整理
+* 保证同源链部署合约地址相同
 * 多签钱包实现
 * 合约事件监听
 
