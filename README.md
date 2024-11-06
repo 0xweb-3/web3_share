@@ -27,11 +27,10 @@
 19. 门限共享秘密算法的流程
 
 ## solidity合约
-* [重点语法说明](https://github.com/0xweb-3/web3_share/tree/main/solidity-doc/01%E9%87%8D%E7%82%B9%E8%AF%AD%E6%B3%95%E8%AF%B4%E6%98%8E)
-* 各种call
-* 合约的调用
-* 合约的升级
-* CREATE2
+* [01重点语法说明](https://github.com/0xweb-3/web3_share/tree/main/solidity-doc/01%E9%87%8D%E7%82%B9%E8%AF%AD%E6%B3%95%E8%AF%B4%E6%98%8E)
+* 02各种call
+* 03合约的升级
+* 04CREATE2
 * Foundry使用
 * 实现erc-20代币
 * 简单实现一个NFT的发行
